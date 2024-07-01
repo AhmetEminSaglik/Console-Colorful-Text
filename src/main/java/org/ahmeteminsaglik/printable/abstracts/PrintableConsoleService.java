@@ -1,6 +1,6 @@
 package org.ahmeteminsaglik.printable.abstracts;
 
-public interface PrintableService {
+public interface PrintableConsoleService {
     default void initialize() {}
 
     default void destroy() {}

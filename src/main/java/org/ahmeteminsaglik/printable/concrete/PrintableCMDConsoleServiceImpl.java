@@ -1,11 +1,11 @@
 package org.ahmeteminsaglik.printable.concrete;
 
-import org.ahmeteminsaglik.printable.abstracts.PrintableService;
+import org.ahmeteminsaglik.printable.abstracts.PrintableConsoleService;
 import org.fusesource.jansi.AnsiConsole;
 
 import static org.fusesource.jansi.Ansi.ansi;
 
-public class PrintableServiceImplColorfulCMD implements PrintableService {
+public class PrintableCMDConsoleServiceImpl implements PrintableConsoleService {
     @Override
     public void initialize() {
         AnsiConsole.systemInstall();
