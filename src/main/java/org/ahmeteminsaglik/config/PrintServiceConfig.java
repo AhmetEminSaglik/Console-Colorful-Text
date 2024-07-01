@@ -13,7 +13,7 @@ public class PrintServiceConfig {
 
     public static void updatePrintableService(EnumPrintOption enumPrintOption) {
         switch (enumPrintOption) {
-            case INTELLIJ_IDEA:
+            case JAVA_IDE:
                 updatePrintableService(new PrintableServiceImplColorfulJava());
                 break;
             case WINDOWS_CMD:

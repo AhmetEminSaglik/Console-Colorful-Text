@@ -1,7 +1,7 @@
 package org.ahmeteminsaglik.printable;
 
 public enum EnumPrintOption {
-    INTELLIJ_IDEA(1, "INTELLIJ_IDEA"),
+    JAVA_IDE(1, "JAVA_IDE"),
     WINDOWS_CMD(1, "WINDOWS_CMD"),
     STANDARD(1, "STANDARD");
 
