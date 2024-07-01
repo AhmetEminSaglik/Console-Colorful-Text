@@ -73,7 +73,7 @@ git clone https://github.com/AhmetEminSaglik/Console-Colorful-text.git
 ```
 2-) Then copy and paste the following command in your cmd.
 ```
-java -jar  Console-Colorful-text/ColorfurTextConsole.jar
+java -jar  Console-Colorful-text/ColorfulTextConsole-ExampleMain
 ```
 * <h4 class="run-in-docker"> Run In Docker </h4>
 
@@ -97,7 +97,7 @@ git clone https://github.com/AhmetEminSaglik/Console-Colorful-text.git
 * <b>  Add Jar file as library: </b>
 
 
- Add `ColorfurTextConsole.jar`  to your project as Jar file in `Console-Colorful-text` folder.
+ Add `ColorfulTextConsole.jar`  to your project as Jar file in `Console-Colorful-text` folder.
 
 
 
