@@ -1,17 +1,17 @@
-<h1><i>Colorful-Text-Console </i> </h1>
+# <i>Colorful-Text-Console </i> 
 
-<h2>Content</h2>
+## Content
 <ol>
         <a href="#about-project"><li>About The Project</li></a>
         <a href="#why-project-created"><li>Why The Project Is Created?</li></a>
         <a href="#used-technologies"><li>Used Technologies</li></a>
-        <a href="#images"><li>Images </li></a>
+        <a href="#image"><li>Images </li></a>
                 <ol> 
-                        <a href="#intelij-idea-output"><li> Intelij IDEA Output</li></a>
+                        <a href="#intelij-idea-output"><li> Intellij IDEA Output</li></a>
                         <a href="#windows-cmd-output"><li>Windows CMD Output</li></a>
                 </ol>
         </li>
-        <a href="#requirement"><li>Requirements</li></a>
+        <a href="#requirements"><li>Requirements</li></a>
          <a href="#quick-start"><li>Quick Start</li></a>
          <ol>
 	<a href="#run-in-cmd"><li>Run in CMD</li></a>
@@ -19,22 +19,23 @@
          </ol>
          </li>
         <a href="#installation"><li>Installation</li></a>
-        
+        <a href="#usage"><li>Usage</li></a>
         
 </ol>
 
-<h2 id="about-project">1-) About The Project</h2>
-<b> <i>Colorful Text Console</i> </b> is a modular library that allows users to easily add colorful text output to their console applications. This library provides a simple and flexible way to customize the colors and formatting of console text, making it more visually appealing and easier to read.
+## <a id="about-project">1-) About The Project</a>
+
+***Colorful Text Console*** is a modular library that allows users to add colorful text output to their console applications easily. This library provides a simple and flexible way to customize the colors and formatting of console text, making it more visually appealing and easier to read.
 <br>
 
-<h2 id="why-project-created">2-) Why The Project Is Created?</h2>
+## <a id="why-project-created">2-) Why The Project Is Created?</a>
 Displaying text in color on the console can greatly improve the readability and visual impact of console-based applications. Colorful text can help users quickly identify important information, highlight key details, and create a more engaging user experience.
 <br><br>
-However, implementing colorful console output can be a tedious and time-consuming task for developers. <b> <i>Colorful Text Console</i> </b> library was created to address this need by providing a straightforward and customizable solution. With this library, developers can easily add colorful text to their console applications without having to write complex color formatting code.
+However, implementing colorful console output can be a tedious and time-consuming task for developers. ***Colorful Text Console*** library was created to address this need by providing a straightforward, customizable solution. With this library, developers can easily add colorful text to their console applications without writing complex color formatting code.
 <br><br>
 The main goal of this project is to empower developers to create more visually appealing and user-friendly console applications, ultimately enhancing the overall user experience and making important information more accessible.
 
-<h2 id="used-technologies">3-) Used Technologies</h2>
+## <a id="used-technologies">3-) Used Technologies</a>
 
 * Core Technologies:
     * JAVA SE
@@ -43,73 +44,66 @@ The main goal of this project is to empower developers to create more visually a
   
   
 
-<h2 id="images">4-) Images </h2>
+## <a id="image">4-) Images </a>
 
-<h3 id="intelij-idea-output"><li> Intelij IDEA Output </li> </h3> 
+
+### <span id="intelij-idea-output"><li> Intelij IDEA Output </li> </span> 
 <br>
 
 !["images/JAVA_IDE"](images/JAVA_IDE.png)</li> <br> <br>
 
-<h3 id="windows-cmd-output"><li> Windows CMD Output </li> </h3> 
+### <a id="windows-cmd-output"><li> Windows CMD Output </li> </a> 
 <br>
 
 !["images/WINDOWS_CMD.png"](images/WINDOWS_CMD.png)</li> <br> <br>
 
-<h2 id="requirement">5-) Requirements</h2>
+## <a id="requirements">5-) Requirements</a>
 
 * <a href="https://www.oracle.com/tr/java/technologies/javase/jdk11-archive-downloads.html">JDK 11</a>
 * <a href="https://www.jetbrains.com/idea/download/?section=windows"> Intelij IDEA (Community Edition) </a></li> 
 
-<h2 id="quick-start">6-) Quick Start (To see Colorful output)</h2>
+## <a id="quick-start">6-) Quick Start (To see Colorful output)</a>
 
-* <h4 class="run-in-cmd"> Run In Windows CMD</h4>
+#### <a id="run-in-cmd"> Run In Windows CMD </a>
 
-1-) Copy and paste the following command in your cmd.
+**1.** Copy and paste the following command in your cmd.
 <br>
 
 ```
 git clone https://github.com/AhmetEminSaglik/Console-Colorful-text.git
 ```
-2-) Then copy and paste the following command in your cmd.
+**2.** Then copy and paste the following command in your cmd.
 ```
 java -jar  Console-Colorful-text/ColorfulTextConsole-ExampleMain.jar
 ```
-* <h4 class="run-in-docker"> Run In Docker </h4>
+#### <a id="run-in-docker"> Run In Docker </a>
 
-1-) Copy and paste the following command in your cmd.
+**1.** Copy and paste the following command in your cmd.
+
 ```
 docker run -it ahmeteminsaglik/colorful-text-console:1.0
 ```
 
 
-<h2 id="installation">7-) Installation </h2>
-1-) Copy and paste the following command in your cmd.
-<br><br>
+## <a id="installation">7-) Installation </a>
+**1.** Copy and paste the following command in your cmd.
 
 ```
 git clone https://github.com/AhmetEminSaglik/Console-Colorful-text.git
 ```
 
-2-) You can select how to import following one of the instructors given bellow.
+**2.** You can select how to import following one of the instructors bellowed.
 
 
-* <b>  Add Jar file as library: </b>
+* **Add Jar file as library:**
 
+    1.  Add `ConsoleColorfulTextModule.jar`  to your project as Jar file in `Console-Colorful-text` folder.
 
- Add `ConsoleColorfulTextModule.jar`  to your project as Jar file in `Console-Colorful-text` folder.
+* **Add Jar file as Maven dependency:**
 
-
-
-* <b>   Add Jar file as Maven dependency:  </b>
-
-<ol>
-<li>
-
-copy `com` folder in `Console-Colorful-text\maven-setup` folder to your `.m2\repository`
-</li>
-
-<li>    
-Add following dependency to your project's pom.xml
+    1. Copy `com` folder in `Console-Colorful-text\maven-setup` folder to your `.m2\repository`
+ 
+    2. Add following dependency to your project's pom.xml
 
 ```
 <groupId>com.ahmeteminsaglik</groupId>
@@ -117,6 +111,34 @@ Add following dependency to your project's pom.xml
 <version>1.0</version>
 ```
 
-</li>
-  </ol>  
-<br><br>
+## <a id="usage">8-) Usage</a>
+
+
+ **1.** Update printing color for IntelliJ Idea or for other IDEs. (ConsoleColors Class is defined in the library)
+```java
+   PrintConsoleServiceConfig.setIdeColor(ConsoleColors.BLUE_BRIGHT);
+```
+Or update the printing color for CMD. (ConsoleColors Class is defined in the library)
+```java
+ PrintConsoleServiceConfig.setCmdColor(Ansi.Color.CYAN);
+ ```
+**2.**  Update printing console area. 
+```java
+// colorful output for Intellij Idea
+PrintConsoleServiceConfig.updatePrintableService(EnumPrintOption.JAVA_IDE); 
+
+//  colorful output for CMD
+PrintConsoleServiceConfig.updatePrintableService(EnumPrintOption.WINDOWS_CMD);    
+
+// standard output for anything.
+PrintConsoleServiceConfig.updatePrintableService(EnumPrintOption.STANDARD);
+```
+**3.** Initialize library.
+```java
+PrintableConsoleService ps = new PrintableConsoleServiceManager();
+```
+**4.**  Print text in the requested color.
+```java
+System.out.println(ps.getColorfulText("colorful text"));
+```
+  
