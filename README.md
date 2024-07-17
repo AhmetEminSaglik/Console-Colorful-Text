@@ -9,6 +9,7 @@
                 <ol> 
                         <a href="#intelij-idea-output"><li> Intellij IDEA Output</li></a>
                         <a href="#windows-cmd-output"><li>Windows CMD Output</li></a>
+                        <a href="#intelij-idea-terminal-output"> <li>Intelij IDEA - Terminal Output</li>
                 </ol>
         </li>
         <a href="#requirements"><li>Requirements</li></a>
@@ -20,22 +21,23 @@
          </li>
         <a href="#installation"><li>Installation</li></a>
         <a href="#usage"><li>Usage</li></a>
+        <a href="#version-difference"><li>Version Difference</li></a>
         
 </ol>
 
-## <a id="about-project">1-) About The Project</a>
+## <span id="about-project">1-) About The Project</span>
 
 ***Colorful Text Console*** is a modular library that allows users to add colorful text output to their console applications easily. This library provides a simple and flexible way to customize the colors and formatting of console text, making it more visually appealing and easier to read.
 <br>
 
-## <a id="why-project-created">2-) Why The Project Is Created?</a>
+## <span id="why-project-created">2-) Why The Project Is Created?</span >
 Displaying text in color on the console can greatly improve the readability and visual impact of console-based applications. Colorful text can help users quickly identify important information, highlight key details, and create a more engaging user experience.
 <br><br>
 However, implementing colorful console output can be a tedious and time-consuming task for developers. ***Colorful Text Console*** library was created to address this need by providing a straightforward, customizable solution. With this library, developers can easily add colorful text to their console applications without writing complex color formatting code.
 <br><br>
 The main goal of this project is to empower developers to create more visually appealing and user-friendly console applications, ultimately enhancing the overall user experience and making important information more accessible.
 
-## <a id="used-technologies">3-) Used Technologies</a>
+## <span id="used-technologies">3-) Used Technologies</span>
 
 * Core Technologies:
     * JAVA SE
@@ -44,27 +46,41 @@ The main goal of this project is to empower developers to create more visually a
   
   
 
-## <a id="image">4-) Images </a>
+## <span id="image">4-) Images </span>
 
 
 ### <span id="intelij-idea-output"><li> Intelij IDEA Output </li> </span> 
 <br>
 
-!["images/JAVA_IDE"](images/JAVA_IDE.png)</li> <br> <br>
+!["images/JAVA_IDE_1"](images/JAVA_IDE_1.png) <br>
 
-### <a id="windows-cmd-output"><li> Windows CMD Output </li> </a> 
+!["images/JAVA_IDE_2"](images/JAVA_IDE_2.png) <br>
+
+
+### <span id="windows-cmd-output"><li> Windows CMD Output </li> </span> 
 <br>
 
-!["images/WINDOWS_CMD.png"](images/WINDOWS_CMD.png)</li> <br> <br>
+!["images/WINDOWS_CMD_1.png"](images/WINDOWS_CMD_1.png)
+<br> 
 
-## <a id="requirements">5-) Requirements</a>
+!["images/WINDOWS_CMD_2.png"](images/WINDOWS_CMD_2.png)
+
+### <span id="intelij-idea-terminal-output"><li> Intelij IDEA - Terminal Output </li> </span> 
+<br>
+
+!["images/IDE-Terminal_1.png"](images/IDE-Terminal_1.png)
+
+
+## <span id="requirements">5-) Requirements</span>
 
 * <a href="https://www.oracle.com/tr/java/technologies/javase/jdk11-archive-downloads.html">JDK 11</a>
-* <a href="https://www.jetbrains.com/idea/download/?section=windows"> Intelij IDEA (Community Edition) </a></li> 
+* <a href="https://www.jetbrains.com/idea/download/?section=windows"> Intelij IDEA (Community Edition) </a>
 
-## <a id="quick-start">6-) Quick Start (To see Colorful output)</a>
 
-#### <a id="run-in-cmd"> Run In Windows CMD </a>
+## <span id="quick-start">6-) Quick Start (To see Colorful output)</span>
+
+
+### <span id="run-in-cmd"> Run In Windows CMD </span>
 
 **1.** Copy and paste the following command in your cmd.
 <br>
@@ -76,16 +92,25 @@ git clone https://github.com/AhmetEminSaglik/Console-Colorful-text.git
 ```
 java -jar  Console-Colorful-text/ColorfulTextConsole-ExampleMain.jar
 ```
-#### <a id="run-in-docker"> Run In Docker </a>
+<br>
+
+### <span id="run-in-docker"> Run In Docker </span>
 
 **1.** Copy and paste the following command in your cmd.
 
+To run `v1.0`
 ```
 docker run -it ahmeteminsaglik/colorful-text-console:1.0
 ```
 
+To run `v1.1`
+```
+docker run -it ahmeteminsaglik/colorful-text-console:1.1
+```
 
-## <a id="installation">7-) Installation </a>
+<br>
+
+## <span id="installation">7-) Installation </span>
 **1.** Copy and paste the following command in your cmd.
 
 ```
@@ -110,8 +135,9 @@ git clone https://github.com/AhmetEminSaglik/Console-Colorful-text.git
 <artifactId>console-colorful-text</artifactId>
 <version>1.0</version>
 ```
+<br>
 
-## <a id="usage">8-) Usage</a>
+## <span id="usage">8-) Usage</span>
 
 
  **1.** Update printing color for IntelliJ Idea or for other IDEs. (ConsoleColors Class is defined in the library)
@@ -142,3 +168,34 @@ PrintableConsoleService ps = new PrintableConsoleServiceManager();
 System.out.println(ps.getColorfulText("colorful text"));
 ```
   
+## <a id="version-difference">9-) Version Differences</a>
+
+* `1.0` : User should update color to use colorful prints.
+
+```java
+// First update Color
+PrintConsoleServiceConfig.setCmdColor(Ansi.Color.CYAN);
+PrintConsoleServiceConfig.setIdeColor(ConsoleColors.BLUE_BRIGHT);
+// Then use it like this.
+ps.getColorfulText("text"); // return this string in Cyan or BlueBright color. Depends on selected color.
+```
+<br>
+
+* `1.1` : New functions are added to use other colors without update always
+
+```java
+// First update Color
+// return text in Info(Cyan) color.
+getInfoColor("text"); 
+// return text in Success(Green) color.
+getSuccessColor("text");
+// return text in Cancel(Yellow) color.
+getCancelColor("text");
+// return text in Warning(Magenta) color.
+getWarningColor("text");
+// return text in Error(Red) color.
+getErrorColor("text");
+PrintConsoleServiceConfig.setIdeColor(ConsoleColors.BLUE_BRIGHT);
+// Then use it like this.
+System.out.println(ps.getSuccessColor("Green colorful text will be printed."));
+```

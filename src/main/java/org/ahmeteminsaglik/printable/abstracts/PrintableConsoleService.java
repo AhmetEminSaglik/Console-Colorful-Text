@@ -7,4 +7,13 @@ public interface PrintableConsoleService {
 
     String getColorfulText(String msg);
 
+    String getInfoColor(String msg);
+
+    String getSuccessColor(String msg);
+
+    String getCancelColor(String msg);
+
+    String getWarningColor(String msg);
+
+    String getErrorColor(String msg);
 }
