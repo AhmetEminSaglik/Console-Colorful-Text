@@ -130,10 +130,12 @@ git clone https://github.com/AhmetEminSaglik/Console-Colorful-text.git
  
     2. Add following dependency to your project's pom.xml
 
-```
+```xml
+<dependency>
 <groupId>com.ahmeteminsaglik</groupId>
 <artifactId>console-colorful-text</artifactId>
 <version>1.0</version>
+</dependency>
 ```
 <br>
 
