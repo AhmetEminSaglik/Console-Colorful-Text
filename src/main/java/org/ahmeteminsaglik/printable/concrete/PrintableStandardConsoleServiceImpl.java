@@ -2,7 +2,7 @@ package org.ahmeteminsaglik.printable.concrete;
 
 import org.ahmeteminsaglik.printable.abstracts.PrintableConsoleService;
 
-public class PrintableStandartConsoleServiceImpl implements PrintableConsoleService {
+public class PrintableStandardConsoleServiceImpl implements PrintableConsoleService {
     @Override
     public String getColorfulText(String msg) {
         return msg;
@@ -19,9 +19,7 @@ public class PrintableStandartConsoleServiceImpl implements PrintableConsoleServ
     }
 
     @Override
-    public String getCancelColor(String msg) {
-        return msg;
-    }
+    public String getCancelColor(String msg) {return msg;}
 
     @Override
     public String getWarningColor(String msg) {

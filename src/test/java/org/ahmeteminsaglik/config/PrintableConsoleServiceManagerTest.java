@@ -40,6 +40,7 @@ class PrintableConsoleServiceManagerTest {
         System.out.println(ps.getCancelColor("Cancel test"));
         System.out.println(ps.getErrorColor("Error test"));
         System.out.println("----------------");
+
     }
 
 

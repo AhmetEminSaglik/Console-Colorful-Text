@@ -5,7 +5,7 @@ import org.ahmeteminsaglik.printable.abstracts.PrintableConsoleService;
 import org.ahmeteminsaglik.printable.concrete.PrintTextColorConfiguration;
 import org.ahmeteminsaglik.printable.concrete.PrintableCMDConsoleServiceImpl;
 import org.ahmeteminsaglik.printable.concrete.PrintableJavaIDEConsoleServiceImpl;
-import org.ahmeteminsaglik.printable.concrete.PrintableStandartConsoleServiceImpl;
+import org.ahmeteminsaglik.printable.concrete.PrintableStandardConsoleServiceImpl;
 import org.fusesource.jansi.Ansi;
 
 public class PrintConsoleServiceConfig {
@@ -20,7 +20,7 @@ public class PrintConsoleServiceConfig {
                 updatePrintableService(new PrintableCMDConsoleServiceImpl());
                 break;
             case STANDARD:
-                updatePrintableService(new PrintableStandartConsoleServiceImpl());
+                updatePrintableService(new PrintableStandardConsoleServiceImpl());
                 break;
             default:
                 System.out.println("Invalid input. Processing with " + printableConsoleService.getClass().getSimpleName());
