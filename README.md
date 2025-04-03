@@ -108,37 +108,26 @@ To run `v1.1`
 docker run -it ahmeteminsaglik/colorful-text-console:1.1
 ```
 
-<br>
-
 ## <span id="installation">7-) Installation </span>
-**1.** Copy and paste the following command in your cmd.
-
+**1.**  add following repository above dependencies' section in your project's pom.xml
+```xml
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 ```
-git clone https://github.com/AhmetEminSaglik/Console-Colorful-text.git
+**2.**  add following dependency to your project's pom.xml
+```xml
+        <dependency>
+            <groupId>com.github.AhmetEminSaglik</groupId>
+            <artifactId>Console-Colorful-Text</artifactId>
+            <version>v1.1</version>
+        </dependency>
 ```
 
-**2.** You can select how to import following one of the instructors bellowed.
-
-
-* **Add Jar file as library:**
-
-    1.  Add `ConsoleColorfulTextModule.jar`  to your project as Jar file in `Console-Colorful-text` folder.
-
-* **Add Jar file as Maven dependency:**
-
-    1. Copy `com` folder in `Console-Colorful-text\maven-setup` folder to your `.m2\repository`
- 
-    2. Add following dependency to your project's pom.xml
-
-
-```
-<dependency>
-  <groupId>org.ahmeteminsaglik</groupId>
-  <artifactId>console-colorful-text</artifactId>
-  <version>1.1</version>
-</dependency>
-```
-<br>
+**3.** refresh your project's pom.xml file. Then it is ready to be used.
 
 ## <span id="usage">8-) Usage</span>
 
